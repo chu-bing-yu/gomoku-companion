@@ -1,7 +1,7 @@
 {
   "id": "gomoku-companion",
   "name": "五子棋",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "在聊天 + 面板里和角色下一盘五子棋，棋局会以卡片回到主聊天。",
   "author": "chu-bing-yu",
   "entry": "https://raw.githubusercontent.com/chu-bing-yu/gomoku-companion/main/plugin.js",
