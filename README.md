@@ -1,6 +1,6 @@
 # 五子棋（Roche 插件）
 
-插件 id：`gomoku-companion` · App id：`gomoku-home` · 当前版本：0.1.0
+插件 id：`gomoku-companion` · App id：`gomoku-home` · 当前版本：0.2.0
 
 在聊天 `+` 面板里和角色下一盘 15×15 五子棋。棋局在弹框里进行，同时以一张卡片留在主聊天里。
 
@@ -20,6 +20,13 @@ https://raw.githubusercontent.com/chu-bing-yu/gomoku-companion/main/manifest.jso
 4. 想让他说话：在弹框下方输入一句，或直接回主聊天里说。主聊天会读到当前局面。
 5. 棋局结束会写回同一张卡片；关掉弹框后从卡片还能继续看/再来一局。
 
+## 外观自定义（App 内「外观」区）
+
+- **主题**：跟随系统 / 白天 / 夜晚。白天是纯白页面，夜晚是深色页面，弹框与卡片同步切换。
+- **卡片风格**：木质 / 素白 / 墨色，只影响聊天卡片底色与描边。
+- **主色**：海蓝 / 竹青 / 陶土 / 雾紫 / 石墨，作用于按钮、状态点、气泡与焦点环。
+- 设置即时生效，下方有真实卡片预览；改动会写进 `gmk:settings`，下次打开沿用。
+
 ## 设计说明
 
 - 棋力三档：温柔 / 认真 / 不放水，全部是本地启发式评分，成五必下、被成五必堵。
@@ -36,7 +43,7 @@ https://raw.githubusercontent.com/chu-bing-yu/gomoku-companion/main/manifest.jso
 | --- | --- |
 | `gmk:games` | 每个会话一局（`conversationId` → 对局快照） |
 | `gmk:stats` | 胜 / 负 / 和 |
-| `gmk:settings` | 默认棋力 |
+| `gmk:settings` | 默认棋力 + 主题 / 卡片风格 / 主色 |
 
 ## 开发
 
